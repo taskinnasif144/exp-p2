@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen w-[full] max-w-[1440px] m-auto">
-      <div className="">
+      {/* <div className="">
         <Hero />
         {width < 720 ? (
           <ForHomeMobile title={"For Home"} array={forHomeServices} />
@@ -59,7 +59,7 @@ export default function Home() {
           <Footer1 />
           <Footer2 />
         </footer>
-      </div>
+      </div> */}
     </main>
   );
 }
