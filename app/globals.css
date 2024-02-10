@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,17 +19,62 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.gradient-text {
+  background: linear-gradient(90deg, white, rgba(53, 23, 23, 0.466) 120%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box-shadow {
+  box-shadow: 3px 1px 6px black;
+}
+
+.gradient-black_to_grey {
+  background: linear-gradient(black 40%, #202020);
+
+}
+
+.gradient-grey_to_black {
+  background: linear-gradient(#202020 40%, black);
+
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  /* Chrome, Opera, Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+  /* Standard syntax */
+}
+
+
+.text-bg-gradient {
+  background: linear-gradient(90deg, transparent 0%, white, transparent 99%);
+}
+
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noScrollBar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.list-style {
+  list-style: inside;
+}
+
+.border-r100 {
+  border-radius: 100%;
 }
