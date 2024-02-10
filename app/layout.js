@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${inter.className} box-border bg-[#202020] font-poppins relative`}>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         {/* <LoginRegisterController /> */}
       </body>
